@@ -1,0 +1,9 @@
+{
+    "name": "ochriiis/projeto-integrado",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}
