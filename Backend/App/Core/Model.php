@@ -13,7 +13,7 @@ class Model
         if(!isset(self::$conexao)){
             
             //O self é usado para pegar um atributo estático desta classe
-            self::$conexao = new \PDO("mysql:host=localhost;port=3306;dbname=fastParking;", "root", "bcd127");
+            self::$conexao = new \PDO("mysql:host=localhost;port=3306;dbname=fastParking;", "root", "Lilicalegal1");
         }
 
         //retornamos a conexão
