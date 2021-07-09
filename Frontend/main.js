@@ -199,7 +199,7 @@ const printRecipt = () => {
     window.print();
 }
 
-    // MODAL DE PREÇOS
+    //MODAL DE PREÇOS
 document.querySelector('#precos')
     .addEventListener('click', () => { openModalPrices(); clearInputs() });
 document.querySelector('#close-prices')
@@ -207,7 +207,7 @@ document.querySelector('#close-prices')
 document.querySelector('#cancelar-prices')
     .addEventListener('click', () => { closeModalPrices(); clearInputs() });
 
-    // SELETOR DOS BOTÕES
+    //SELETOR DOS BOTÕES
 document.querySelector('#tableCars')
     .addEventListener('click', getButtons);
 
@@ -231,7 +231,7 @@ document.querySelector('#salvar')
 document.querySelector('#salvarPreco')
     .addEventListener('click', savePrice);
 
-    // IMPRESSÃO
+    //IMPRESSÃO
 document.querySelector('#imprimir-receipt').addEventListener('click', printRecipt)
 document.querySelector('#imprimir-exit').addEventListener('click', printRecipt)
 

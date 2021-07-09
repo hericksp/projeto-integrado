@@ -1,19 +1,14 @@
 <?php
 
 namespace App\Core;
-
 class Router
 
 {
 
     private $controller;
-
     private $httpMethod = "GET";
-
     private $controllerMethod;
-
     private $params = [];
-
     function _construct()
 
     {
@@ -32,15 +27,15 @@ class Router
             $this->controller = $url[1];
             unset($url[1]);
         } else {
-            // print_r($url);
+            
             echo "Algo deu errado :(";
             exit;
         }
 
-        //importamos o controlelr
+        //importamos o controller
         require_once "../App/Controller/" . $this->controller . ".php";
 
-        //onstancia do controller
+        //instancia do controller
         $this -> controller = new $this->controller;
 
         //pegando o HTTP Method
@@ -78,12 +73,11 @@ class Router
                 exit;
         }
 
-
         //executamos o metodo dentro do controler, passando os parametro
         call_user_func_array([$this->controller, $this->controllerMethod], $this->params);
     }
 
-    //Recuperar a URL e retornar os parametros
+    //recuperar a URL e retornar os parametros
     private function parseURL()
     {
         return explode("/", $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"]);

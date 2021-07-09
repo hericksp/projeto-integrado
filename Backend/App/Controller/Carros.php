@@ -1,7 +1,6 @@
 <?php
 
 use App\Core\Controller;
-
 class Carros extends Controller
 
 {

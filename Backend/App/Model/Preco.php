@@ -1,8 +1,8 @@
 <?php
 
 use App\Core\Model;
-
 class Preco
+
 {
      public $idPreco;
     public $primeiraHora;

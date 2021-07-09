@@ -1,8 +1,8 @@
 <?php
 
 use App\Core\Controller;
-
 class Precos extends Controller
+
 {
     public function index()
     {
